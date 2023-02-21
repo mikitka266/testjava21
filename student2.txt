@@ -1,0 +1,361 @@
+mikitka@mikitka:~/homework2$ mkdir schoolToys
+mikitka@mikitka:~/homework2$ mkdir kidsToys
+mikitka@mikitka:~/homework2$ ll
+итого 28
+drwxrwxr-x  4 mikitka mikitka 4096 фев 20 20:10 ./
+drwxr-xr-x 41 mikitka mikitka 4096 фев 20 20:08 ../
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:10 kidsToys/
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:09 schoolToys/
+-rw-rw-r--  1 mikitka mikitka 4893 фев 13 20:57 student2.txt
+lrwxrwxrwx  1 mikitka mikitka    9 янв 18 22:37 student3.txt -> file1.txt
+-rw-rw-r--  1 mikitka mikitka  505 янв 18 22:35 student4.txt
+mikitka@mikitka:~/homework2$ cd schoolToys/
+mikitka@mikitka:~/homework2/schoolToys$ touch robots.txt
+mikitka@mikitka:~/homework2/schoolToys$ touch konsructor.txt
+mikitka@mikitka:~/homework2/schoolToys$ touch tableGames.txt
+mikitka@mikitka:~$ cd /homework2
+bash: cd: /homework2: Нет такого файла или каталога
+mikitka@mikitka:~$ cd homework2/
+mikitka@mikitka:~/homework2$ ll
+итого 28
+drwxrwxr-x  4 mikitka mikitka 4096 фев 20 20:10 ./
+drwxr-xr-x 41 mikitka mikitka 4096 фев 20 20:08 ../
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:10 kidsToys/
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:11 schoolToys/
+-rw-rw-r--  1 mikitka mikitka 4893 фев 13 20:57 student2.txt
+lrwxrwxrwx  1 mikitka mikitka    9 янв 18 22:37 student3.txt -> file1.txt
+-rw-rw-r--  1 mikitka mikitka  505 янв 18 22:35 student4.txt
+mikitka@mikitka:~/homework2$ cd kidsToys/
+mikitka@mikitka:~/homework2/kidsToys$ touch cutetoys.txt
+mikitka@mikitka:~/homework2/kidsToys$ touch cars.txt
+mikitka@mikitka:~/homework2/kidsToys$ touch barbie.txt
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*
+cp: после 'schoolToys/*' пропущен операнд, задающий целевой файл
+По команде «cp --help» можно получить дополнительную информацию.
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolTiys/*.
+cp: после 'schoolTiys/*.' пропущен операнд, задающий целевой файл
+По команде «cp --help» можно получить дополнительную информацию.
+mikitka@mikitka:~/homework2/kidsToys$ cp -a schoolToys kidsToys
+cp: не удалось выполнить stat для 'schoolToys': Нет такого файла или каталога
+mikitka@mikitka:~/homework2/kidsToys$ cd .
+mikitka@mikitka:~/homework2/kidsToys$ cd ./.
+mikitka@mikitka:~/homework2/kidsToys$ cd ..
+mikitka@mikitka:~/homework2$ cp -a schoolToys kidsToys
+mikitka@mikitka:~/homework2$ cd kidsToys/
+mikitka@mikitka:~/homework2/kidsToys$ ll
+итого 12
+drwxrwxr-x 3 mikitka mikitka 4096 фев 20 20:23 ./
+drwxrwxr-x 4 mikitka mikitka 4096 фев 20 20:10 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:16 barbie.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cars.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cutetoys.txt
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:11 schoolToys/
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*.
+cp: после 'schoolToys/*.' пропущен операнд, задающий целевой файл
+По команде «cp --help» можно получить дополнительную информацию.
+mikitka@mikitka:~/homework2/kidsToys$ ll
+итого 12
+drwxrwxr-x 3 mikitka mikitka 4096 фев 20 20:23 ./
+drwxrwxr-x 4 mikitka mikitka 4096 фев 20 20:10 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:16 barbie.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cars.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cutetoys.txt
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:11 schoolToys/
+mikitka@mikitka:~/homework2/kidsToys$ cd schoolToys/
+mikitka@mikitka:~/homework2/kidsToys/schoolToys$ ll
+итого 8
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:11 ./
+drwxrwxr-x 3 mikitka mikitka 4096 фев 20 20:23 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:11 konsructor.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:11 robots.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:11 tableGames.txt
+mikitka@mikitka:~/homework2/kidsToys/schoolToys$ mv konsructor.txt kidsToys/
+mv: невозможно переместить 'konsructor.txt' в 'kidsToys/': Это не каталог
+mikitka@mikitka:~/homework2/kidsToys/schoolToys$ cd ..
+mikitka@mikitka:~/homework2/kidsToys$ rmdir schoolToys
+rmdir: не удалось удалить 'schoolToys': Каталог не пуст
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*.
+cp: после 'schoolToys/*.' пропущен операнд, задающий целевой файл
+По команде «cp --help» можно получить дополнительную информацию.
+mikitka@mikitka:~/homework2/kidsToys$ cp --help
+Использование: cp [ПАРАМЕТР]… [-T] ИСТОЧНИК НАЗНАЧЕНИЕ
+       или:    cp [ПАРАМЕТР]… ИСТОЧНИК… КАТАЛОГ
+       или:    cp [ПАРАМЕТР]… -t КАТАЛОГ ИСТОЧНИК…
+Копирует ИСТОЧНИК в НАЗНАЧЕНИЕ, или несколько ИСТОЧНИКОВ в КАТАЛОГ.
+
+Аргументы, обязательные для длинных параметров, обязательны и для коротких.
+  -a, --archive                то же, что и -dPR --preserve=all
+      --attributes-only        не копировать данные файла, только атрибуты
+      --backup[=КОГДА]         создавать резервную копию каждого целевого
+                               файла
+  -b                           то же, что и --backup, но без аргумента
+      --copy-contents          копировать содержимое специальных файлов при
+                               рекурсивной обработке
+  -d                           то же, что и --no-dereference --preserve=link
+  -f, --force                  если невозможно открыть существующий файл, то
+                               удалить его и попробовать ещё раз (этот параметр
+                               игнорируется, если также указан параметр -n)
+  -i, --interactive            спрашивать перед тем как переписывать
+                               (отменяет ранее указанный параметр -n)
+  -H                           следовать по символьным ссылкам в ИСТОЧНИКЕ
+  -l, --link                   создавать жёсткие ссылки вместо копирования
+  -L, --dereference            всегда следовать символьным ссылкам в ИСТОЧНИКЕ
+  -n, --no-clobber             не перезаписывать существующий файл (отменяет
+                               ранее указанный ключ -i)
+  -P, --no-dereference         не следовать по символьным ссылкам в ИСТОЧНИКЕ
+  -p                           то же, что и
+                               --preserve=mode,ownership,timestamps
+      --preserve[=СПИС_АТТР]   сохранять указанные атрибуты (по умолчанию:
+                               mode,ownership,timestamps) и, если возможно,
+                               дополнительные атрибуты: context, links, xattr,
+                               all
+      --no-preserve=СПИС_АТТР  не сохранять указанные атрибуты
+      --parents                добавить исходный путь к КАТАЛОГУ
+  -R, -r, --recursive          рекурсивно копировать каталоги
+      --reflink[=КОГДА]        контролировать копии clone/CoW. См. ниже.
+      --remove-destination     удалять каждый файл назначения перед
+                               попыткой его открыть (обратно к --force)
+      --sparse=КОГДА           управлять созданием разреженных файлов.
+                               См. ниже.
+      --strip-trailing-slashes удалять все конечные косые черты из каждого
+                               аргумента ИСТОЧНИК
+  -s, --symbolic-link          создавать символьные ссылки вместо копирования
+  -S, --suffix=СУФФИКС         использовать для запасных копий заданный
+                               СУФФИКС
+      --target-directory=КАТ   скопировать все ИСТОЧНИКИ в КАТАЛОГ
+  -T, --no-target-directory    считать НАЗНАЧЕНИЕ обычным файлом
+  -u, --update                 копировать только тогда когда исходный файл
+                               новее чем файл назначения, или когда файл
+                               назначения отсутствует
+  -v, --verbose                пояснять что будет сделано
+  -x, --one-file-system        оставаться в пределах одной файловой системы
+  -Z                           установить контекст безопасности SELinux
+                               файла назначения равным типу по умолчанию
+      --context[=CTX]          подобно -Z, или если указан CTX, то установить
+                               контекст безопасности SELinux
+                               или SMACK равным CTX
+      --help     показать эту справку и выйти
+      --version  показать информацию о версии и выйти
+
+По умолчанию, разреженные файлы ИСТОЧНИКА распознаются при помощи грубой
+эвристической процедуры и соответственно создаются разреженные НАЗНАЧЕНИЯ.
+Такое поведение задаётся при помощи параметр --sparse=auto.
+С параметром --sparse=always всегда создаётся разреженный файл НАЗНАЧЕНИЯ, вне
+зависимости от того, содержит ли ИСТОЧНИК достаточно длинные
+последовательности нулевых байтов. Используйте параметр --sparse=never для
+запрещения создания разреженных файлов.
+
+Если указано --reflink[=always], выполняется облегчённое копирование, при
+котором блоки данных копируются только при изменении. Если это невозможно,
+или если указано --reflink=auto, то используется обычное копирование.
+При указании --reflink=never всегда выполняется обычное копирование.
+
+По умолчанию суффикс для запасных копий «~», если только не установлена
+переменная окружения SIMPLE_BACKUP_SUFFIX или не задан параметр --suffix.
+Способ контроля версий может быть установлен при помощи ключа --backup
+или переменной окружения VERSION_CONTROL. Допустимые значения:
+
+  none, off       никогда не создавать резервных копий (даже если
+                  указан параметр --backup)
+  numbered, t     создавать нумерованные копии
+  existing, nil   пронумеровать, если уже существуют пронумерованные
+                  резервные копии, иначе создавать простые
+  simple. never   всегда создавать простые копии
+
+Как исключение, cp создает резервную копию ИСТОЧНИКА, если заданы
+параметры -f и -b, а если ИСТОЧНИК совпадает с НАЗНАЧЕНИЕМ, то cp создает
+резервную копию НАЗНАЧЕНИЯ.
+
+Страница справки по GNU coreutils: <https://www.gnu.org/software/coreutils/>
+Об ошибках в переводе сообщений «cp» сообщайте по адресу <gnu@d07.ru>
+Полная документация: <https://www.gnu.org/software/coreutils/cp>
+или доступная локально: info '(coreutils) cp invocation'
+mikitka@mikitka:~/homework2/kidsToys$ ll
+итого 12
+drwxrwxr-x 3 mikitka mikitka 4096 фев 20 20:23 ./
+drwxrwxr-x 4 mikitka mikitka 4096 фев 20 20:10 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:16 barbie.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cars.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cutetoys.txt
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:11 schoolToys/
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*
+cp: указанная цель 'schoolToys/tableGames.txt' не является каталогом
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*.
+cp: после 'schoolToys/*.' пропущен операнд, задающий целевой файл
+По команде «cp --help» можно получить дополнительную информацию.
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*. -a
+cp: после 'schoolToys/*.' пропущен операнд, задающий целевой файл
+По команде «cp --help» можно получить дополнительную информацию.
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*.txt
+cp: указанная цель 'schoolToys/tableGames.txt' не является каталогом
+mikitka@mikitka:~/homework2/kidsToys$ cp schoolToys/*.txt .
+mikitka@mikitka:~/homework2/kidsToys$ ll
+итого 12
+drwxrwxr-x 3 mikitka mikitka 4096 фев 20 20:38 ./
+drwxrwxr-x 4 mikitka mikitka 4096 фев 20 20:10 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:16 barbie.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cars.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cutetoys.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 konsructor.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 robots.txt
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:11 schoolToys/
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 tableGames.txt
+mikitka@mikitka:~/homework2/kidsToys$ rm -rf schoolToys
+mikitka@mikitka:~/homework2/kidsToys$ ll
+итого 8
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:39 ./
+drwxrwxr-x 4 mikitka mikitka 4096 фев 20 20:10 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:16 barbie.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cars.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cutetoys.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 konsructor.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 robots.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 tableGames.txt
+mikitka@mikitka:~/homework2/kidsToys$ cd ..
+mikitka@mikitka:~/homework2$ mv kidToys nameToys
+mv: не удалось выполнить stat для 'kidToys': Нет такого файла или каталога
+mikitka@mikitka:~/homework2$ mv kidToys/ nameToys/
+mv: не удалось выполнить stat для 'kidToys/': Нет такого файла или каталога
+mikitka@mikitka:~/homework2$ mv kidToys nameToys
+mv: не удалось выполнить stat для 'kidToys': Нет такого файла или каталога
+mikitka@mikitka:~/homework2$ ll
+итого 28
+drwxrwxr-x  4 mikitka mikitka 4096 фев 20 20:10 ./
+drwxr-xr-x 41 mikitka mikitka 4096 фев 20 20:08 ../
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:39 kidsToys/
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:11 schoolToys/
+-rw-rw-r--  1 mikitka mikitka 4893 фев 13 20:57 student2.txt
+lrwxrwxrwx  1 mikitka mikitka    9 янв 18 22:37 student3.txt -> file1.txt
+-rw-rw-r--  1 mikitka mikitka  505 янв 18 22:35 student4.txt
+mikitka@mikitka:~/homework2$ rm -rf schoolToys/
+mikitka@mikitka:~/homework2$ ll
+итого 24
+drwxrwxr-x  3 mikitka mikitka 4096 фев 20 20:43 ./
+drwxr-xr-x 41 mikitka mikitka 4096 фев 20 20:08 ../
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:39 kidsToys/
+-rw-rw-r--  1 mikitka mikitka 4893 фев 13 20:57 student2.txt
+lrwxrwxrwx  1 mikitka mikitka    9 янв 18 22:37 student3.txt -> file1.txt
+-rw-rw-r--  1 mikitka mikitka  505 янв 18 22:35 student4.txt
+mikitka@mikitka:~/homework2$ mv kidToys nameToys
+mv: не удалось выполнить stat для 'kidToys': Нет такого файла или каталога
+mikitka@mikitka:~/homework2$ mv kidsTOys nameToys
+mv: не удалось выполнить stat для 'kidsTOys': Нет такого файла или каталога
+mikitka@mikitka:~/homework2$ mv kidsToys nameToys
+mikitka@mikitka:~/homework2$ ll
+итого 24
+drwxrwxr-x  3 mikitka mikitka 4096 фев 20 20:44 ./
+drwxr-xr-x 41 mikitka mikitka 4096 фев 20 20:08 ../
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:39 nameToys/
+-rw-rw-r--  1 mikitka mikitka 4893 фев 13 20:57 student2.txt
+lrwxrwxrwx  1 mikitka mikitka    9 янв 18 22:37 student3.txt -> file1.txt
+-rw-rw-r--  1 mikitka mikitka  505 янв 18 22:35 student4.txt
+mikitka@mikitka:~/homework2$ mv nameToys toys
+mikitka@mikitka:~/homework2$ ll
+итого 24
+drwxrwxr-x  3 mikitka mikitka 4096 фев 20 20:45 ./
+drwxr-xr-x 41 mikitka mikitka 4096 фев 20 20:08 ../
+-rw-rw-r--  1 mikitka mikitka 4893 фев 13 20:57 student2.txt
+lrwxrwxrwx  1 mikitka mikitka    9 янв 18 22:37 student3.txt -> file1.txt
+-rw-rw-r--  1 mikitka mikitka  505 янв 18 22:35 student4.txt
+drwxrwxr-x  2 mikitka mikitka 4096 фев 20 20:39 toys/
+mikitka@mikitka:~/homework2$ cd toys/
+mikitka@mikitka:~/homework2/toys$ ll
+итого 8
+drwxrwxr-x 2 mikitka mikitka 4096 фев 20 20:39 ./
+drwxrwxr-x 3 mikitka mikitka 4096 фев 20 20:45 ../
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:16 barbie.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cars.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:15 cutetoys.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 konsructor.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 robots.txt
+-rw-rw-r-- 1 mikitka mikitka    0 фев 20 20:38 tableGames.txt
+mikitka@mikitka:~/homework2/toys$ snap find
+Поисковый запрос пуст. Но имеются некоторые snap-пакеты, которые могут вас заинтересовать:
+
+Название     Версия                            Издатель               Примечание  Описание
+jami         20230130.1037.1b9159ac            sfljami                -           Privacy-oriented voice, video, chat, and conference platform and SIP phone
+krita        5.1.1                             krita✓                 -           Digital Painting, Creative Freedom
+thunderbird  102.8.0-2                         canonical✓             -           Mozilla Thunderbird email application
+notepadqq    1.4.8                             danieleds              -           A Notepad++-like editor for Linux.
+postman      10.10.3                           postman-inc✓           -           API Development Environment
+mailspring   1.10.8                            foundry376✓            -           The best email app for people and teams at work
+spotify      1.1.84.716.gc5f8b819              spotify✓               -           Music for everyone
+slack        4.29.149                          slack✓                 -           Team communication for the 21st century.
+foobar2000   1.6.16                            mmtrt                  -           foobar2000 is an advanced freeware audio player.
+gimp         2.10.30                           snapcrafters           -           GNU Image Manipulation Program
+hugo         0.110.0                           hugo-authors           -           Fast and Flexible Static Site Generator
+inkscape     1.2.2-732a01da63-2022-12-09-cust  inkscape✓              -           Vector Graphics Editor
+juju         2.9.38                            canonical✓             classic     Juju - a model-driven operator lifecycle manager for K8s and machines
+skype        8.94.0.422                        skype✓                 -           One Skype for all your devices. New features. New look. All Skype.
+litteris     master                            raibtoffoletto         -           Penpal Correspondence Organized
+musescore    3.6.2                             musescore✓             -           Create, play and print beautiful sheet music.
+newsboat     r2.30.1                           minoru                 -           An RSS/Atom feed reader for text terminals
+qownnotes    23.2.5                            pbek                   -           Plain-text file markdown note taking with Nextcloud/ownCloud integration
+retroarch    1.14.0                            libretro               -           RetroArch is the official reference frontend for the libretro API.
+audacity     3.1.3                             diddledani✪            -           Audio software for multi-track recording and editing
+bitwarden    2023.2.0                          bitwarden✓             -           Bitwarden
+obs-studio   27.1.3                            snapcrafters           -           Free and open source software for live streaming and screen recording
+gitkraken    9.1.1                             gitkraken✓             classic     For repo management, in-app code editing & issue tracking.
+keepassxc    2.7.4                             keepassxreboot         -           Community-driven port of the Windows application “KeePass Password Safe”
+vlc          3.0.18                            videolan✓              -           The ultimate media player
+powershell   7.3.2                             microsoft-powershell✓  classic     PowerShell for every system!
+
+Введите поисковый запрос так, чтобы результаты поиска были наиболее точны.
+mikitka@mikitka:~/homework2/toys$ snap find chromium
+Название                  Версия          Издатель         Примечание  Описание
+chromium                  110.0.5481.100  canonical✓       -           Chromium web browser, open-source version of Chrome
+chromium-ffmpeg           0.1             canonical✓       -           FFmpeg codecs (free and proprietary) for use by third-party browser snaps
+chromium-ffmpeg-test      0.1             osomon           -           Test snap that exercises the slots exposed by chromium-ffmpeg
+flashcardsmobile          1.0.0           pjacksonlink     -           The ultimate flashcards app.
+boxy-svg                  3.96.0          jarek-foksa      -           Scalable Vector Graphics (SVG) editor
+pocket-browser            1.8.0           pocketinc        -           An open-source browser made for privacy and going towards security!
+nativefier                50.0.1          kz6fittycent     -           Nativefier is a command-line tool to easily create a “desktop app”
+electronim                0.0.90          marcnuri         -           Free/Libre open source Electron based multi instant messaging (IM) client.
+linux-search-everything   1.0.0           jalejandroc2928  -           A faster and more flexible File Browser for Linux
+restart-chromium          1               mgibbs-dfrs      -           Restart Browser
+dashkiosk-client-browser  0.1             ogra             -           Chromium in Kiosk mode specifically adjusted for dashkiosk
+mikitka@mikitka:~/homework2/toys$ sudo snap apt install chromium
+[sudo] пароль для mikitka: 
+ошибка: неизвестная команда "apt", см. 'snap help'.
+mikitka@mikitka:~/homework2/toys$ sudo snap apt-get install chromium
+ошибка: неизвестная команда "apt-get", см. 'snap help'.
+mikitka@mikitka:~/homework2/toys$ snap help
+The snap command lets you install, configure, refresh and remove snaps.
+Snaps are packages that work across many different Linux distributions,
+enabling secure delivery and operation of the latest apps and utilities.
+
+Использование: snap <команда> [<параметры>...]
+
+Commonly used commands can be classified as follows:
+
+        Основное: find, info, install, remove, list
+    ...подробнее: refresh, revert, switch, disable, enable, create-cohort
+         История: changes, tasks, abort, watch
+          Службы: services, start, stop, restart, logs
+      Разрешения: connections, interface, connect, disconnect
+    Конфигурация: get, set, unset, wait
+     App Aliases: alias, aliases, unalias, prefer
+  Учётная запись: login, logout, whoami
+       Snapshots: saved, save, check-snapshot, restore, forget
+      Устройство: model, reboot, recovery
+      Разработка: download, pack, run, try
+       ... Other: warnings, okay, known, ack, version
+
+Для получения дополнительных сведений о команде, выполните 'snap help <команда>'.
+Для показа краткой сводки по всем командам, выполните 'snap help --all'.
+mikitka@mikitka:~/homework2/toys$ sudo snap refresh chromium
+snap-пакет "chromium" не имеет доступных обновлений
+mikitka@mikitka:~/homework2/toys$ скщтефи -у
+скщтефи: команда не найдена
+mikitka@mikitka:~/homework2/toys$ crontab -e
+crontab: installing new crontab
+mikitka@mikitka:~/homework2/toys$ crontab -l
+* 3  * * * echo "Java is fine $(date)" >> ~/etc/tast/test.txt.bak
+mikitka@mikitka:~/homework2/toys$ crontab -e
+No modification made
+mikitka@mikitka:~/homework2/toys$ 
+
+
+
+
+
